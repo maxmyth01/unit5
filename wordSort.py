@@ -2,8 +2,7 @@
 #11-13-17
 #wordSort.py -- sort alphabetically
 
-words = input('Enter some words: ').split(' ')
-print(words)
+words = input('Enter a list of words: ').split(' ')
 
 words.sort()
 
