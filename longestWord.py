@@ -2,7 +2,7 @@
 #11-13-17
 #middleWord.py -- finds middle if even print both
 
-words = input('Enter some words').split()
+words = input('Enter some words: ').split()
 
 for w in words:
     lettercount=0
