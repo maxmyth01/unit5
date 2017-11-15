@@ -12,7 +12,7 @@ for w in words:
     for ch in w:
         lettercount += 1
         
-    if lettercount >= maxletters:
+    if lettercount > maxletters:
         maxletters = lettercount
         maxword = w
     lettercount = 0
