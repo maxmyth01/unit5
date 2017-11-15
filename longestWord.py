@@ -9,7 +9,7 @@ for w in words:
     maxletters = 0
     maxword=0
     
-    for ch in word:
+    for ch in w:
         lettercount += 1
         
     if lettercount >= maxletters:
