@@ -16,9 +16,7 @@ for w in words:
         lettercount = maxletters
         maxword = w
     lettercount = 0
-        
-maxword = int(maxword)
-print("The longest word is", words[maxword])
+print("The longest word is",maxword)
             
         
         
