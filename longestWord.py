@@ -7,15 +7,17 @@ words = input('Enter some words').split()
 for w in words:
     lettercount=0
     maxletters = 0
-    word=0
+    maxword=0
+    
     for ch in word:
         lettercount += 1
+        
     if lettercount >= maxletters:
         lettercount = maxletters
-        word = w
+        maxword = w
     lettercount = 0
         
-print("The longest word is", words[word])
+print("The longest word is", words[maxword])
             
         
         
