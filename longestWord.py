@@ -13,7 +13,7 @@ for w in words:
         lettercount += 1
         
     if lettercount >= maxletters:
-        lettercount = maxletters
+        maxletters = lettercount
         maxword = w
     lettercount = 0
 print("The longest word is",maxword)
