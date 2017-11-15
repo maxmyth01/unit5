@@ -3,12 +3,10 @@
 #middleWord.py -- finds middle if even print both
 
 words = input('Enter some words: ').split()
-
+lettercount=0
+maxletters = 0
+maxword=0
 for w in words:
-    lettercount=0
-    maxletters = 0
-    maxword=0
-    
     for ch in w:
         lettercount += 1
         
