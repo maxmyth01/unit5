@@ -10,11 +10,12 @@ for w in words:
     word=0
     for ch in word:
         lettercount += 1
-        if lettercount > maxletters:
-            lettercount = maxletters
-            word = w
-        lettercount = 0
-print(words[word])
+    if lettercount >= maxletters:
+        lettercount = maxletters
+        word = w
+    lettercount = 0
+        
+print("The longest word is", words[word])
             
         
         
