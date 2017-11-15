@@ -7,4 +7,4 @@ dictionary = ['alphbet','sweatshirt','sweatpants','shorts','computer','waterbott
 dictionary.sort()
 
 number = int(input('What number word do you want to look up?'))
-print('Word number',number,'is', dictionary[number -= 1])
+print('Word number',number,'is', dictionary[number - 1])
