@@ -4,7 +4,7 @@
 
 words = input('Enter some words').split()
 
-For w in words:
+for w in words:
     lettercount=0
     maxletters = 0
     word=0
