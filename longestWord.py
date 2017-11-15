@@ -17,6 +17,7 @@ for w in words:
         maxword = w
     lettercount = 0
         
+maxword = int(maxword)
 print("The longest word is", words[maxword])
             
         
