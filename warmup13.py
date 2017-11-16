@@ -6,6 +6,5 @@ from random import randint
 
 number = ()
 for n in range(1,21):
-    num = randint(-100,100)
-    number.append(num)
+    number.append("randint(-100,100)")
     print(number)
