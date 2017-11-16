@@ -17,7 +17,7 @@ blueOutline = LineStyle(5,color[0])
 
 
 def mouseClick(event):
-    Rectangle = RectangleAsset(200,100,blueOutline,color[randint(1,4)])
+    Rectangle = RectangleAsset(200,100,blueOutline,color[randint(0,3)])
 
     Sprite(Rectangle,(75,100))
 
