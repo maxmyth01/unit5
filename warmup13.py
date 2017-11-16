@@ -4,5 +4,6 @@
 
 from random import randint
 
+List = ()
 for n in range(1,21):
-    print(randint(-100,100))
+    List.append(randint(-100,100))
