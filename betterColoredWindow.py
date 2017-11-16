@@ -13,9 +13,6 @@ from random import randint
 color = [Color(0x0000FF,1),Color(0xFFFF00,1),Color(0x00FF00,1),Color(0xff0000,1)]
 blueOutline = LineStyle(5,color[0])
 
-
-
-
 def mouseClick(event):
     Rectangle = RectangleAsset(200,100,blueOutline,color[randint(0,3)])
 
