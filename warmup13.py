@@ -7,3 +7,4 @@ from random import randint
 List = ()
 for n in range(1,21):
     List.append(randint(-100,100))
+    print(List)
