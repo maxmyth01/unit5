@@ -8,5 +8,4 @@ from calendar import weekday
 today = datetime.date.today()
 print(today)
 
-month = date.today().month 
-year = date.today().year
+print(today.day)
