@@ -7,4 +7,6 @@ from random import randint
 number = []
 for n in range(1,21):
     number.append(randint(-100,100))
-    print(number)
+print(number)
+
+print(max(number))
