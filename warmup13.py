@@ -4,7 +4,7 @@
 
 from random import randint
 
-number = ()
+number = []
 for n in range(1,21):
     num = randint(-100,100)
     number.append(num)
