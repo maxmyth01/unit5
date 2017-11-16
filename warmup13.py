@@ -4,5 +4,5 @@
 
 from random import randint
 
-for n in range(1,21)
+for n in range(1,21):
     print(randint(-100,100))
