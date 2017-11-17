@@ -4,3 +4,6 @@
 
 board = [["a","b","b"],["d","e","f"],["g","h","i"]]
 
+for row in range(0,3):
+    for each col in range[0,3]:
+        print(board[row][col])
