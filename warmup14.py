@@ -4,4 +4,4 @@
 
 
 words = input("Enter your name: ").split(" ")
-print words[0]
+print("Your Intials are", words[0][0], words[1][0])
