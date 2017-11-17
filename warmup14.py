@@ -3,3 +3,5 @@
 #warmup14.py -- Take full name and print initials
 
 
+words = input("Enter your name: ").split(" ")
+print words[0]
