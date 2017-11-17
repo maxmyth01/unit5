@@ -5,7 +5,7 @@
 from datetime import date
 from calendar import weekday
 
-today = datetime.date.today()
+today = date.today()
 print(today)
 
 print(today.day)
