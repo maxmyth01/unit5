@@ -20,4 +20,4 @@ col = int(input("Enter a col number"))
 
 board[row-1][col-1] = "X"
 
-printBoard
+printBoard()
