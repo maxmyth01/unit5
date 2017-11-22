@@ -19,7 +19,7 @@ def step():
         ant.y += dy
         
 # creates te ants
-if _name_ == '_main_':
+if __name__ == '__main__':
     data = {}
     data[antList] = []
 
