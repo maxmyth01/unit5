@@ -21,13 +21,13 @@ def step():
 # creates te ants
 if __name__ == '__main__':
     data = {}
-    data[antList] = []
+    data['antList'] = []
 
     red = Color(0xFF0000,1)
     ant = CircleAsset(20,LineStyle(1,red),red)
 
     #put each ant in the ant list
     for i in range(NUMANTS):
-        data[antList].append(Sprite(ant,(randint(1,WIDTH),randint(1,HIGHT))))
+        data['antList'].append(Sprite(ant,(randint(1,WIDTH),randint(1,HIGHT))))
         
 App().run(step)
