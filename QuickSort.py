@@ -38,6 +38,7 @@ def mySort(A):
             p = partition(A, lo, hi)
             quicksort(A, lo, p - 1)
             quicksort(A, p+1, hi)
+
     def partition(A, lo, hi):
         pivot = A[hi]
         i = lo - 1
@@ -45,7 +46,9 @@ def mySort(A):
             if A[j] < pivot:
                 i = i+=1
                 A[i], A[j] = A[j],A[i]
-                
+            if A[hi] < A[i+1]:
+                A[i+1], A[hi] = A[hi],A[i+1]
+            return i+1
         
 """
     swapped = True
