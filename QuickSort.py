@@ -31,15 +31,15 @@ algorithm partition(A, lo, hi) is
 def mySort(A, lo, hi):
     if lo < hi:
         p = partition(A, lo, hi)
-        quicksort(A, lo, p - 1)
-        quicksort(A, p+1, hi)
+        mySort(A, lo, p - 1)
+        mySort(A, p+1, hi)
 
 def partition(A, lo, hi):
     pivot = A[hi]
     i = lo - 1
     for j in range(lo,hi):
         if A[j] < pivot:
-            i = i+=1
+            i += 1
             A[i], A[j] = A[j],A[i]
         if A[hi] < A[i+1]:
             A[i+1], A[hi] = A[hi],A[i+1]
