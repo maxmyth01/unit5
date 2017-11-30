@@ -33,7 +33,7 @@ def mySort(A, lo, hi):
         p = partition(A, lo, hi)
         mySort(A, lo, p - 1)
         mySort(A, p+1, hi)
-    print A
+    print(A)
     return A
 
 def partition(A, lo, hi):
