@@ -3,8 +3,9 @@
 #warmup15.py -- doubble the number list
 
 
-new = []
-def doubled():
+
+def doubled(double):
+    new = []
     for num in double:
         new.append(num*2)
     return new
