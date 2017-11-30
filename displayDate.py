@@ -8,8 +8,9 @@ from calendar import weekday
 today = date.today()
 
 day = today.weekday()
-month = today.month
-year = today.year
+month = int(today.month)
+year = int(today.year)
+
 
 dayOfWeek = ["Monday","Tuesday","Wenesday","Thursday","Friday","Saterday","Sunday"]
 monthOfYear = ["January","Febuary","March","April","May","June","July","Auguest","September","October","November","December"]
