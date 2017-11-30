@@ -33,7 +33,6 @@ def mySort(A, lo, hi):
         p = partition(A, lo, hi)
         mySort(A, lo, p - 1)
         mySort(A, p+1, hi)
-    print(A)
     return A
 
 def partition(A, lo, hi):
@@ -45,7 +44,7 @@ def partition(A, lo, hi):
             A[i], A[j] = A[j],A[i]
     if A[hi] < A[i+1]:
         A[hi], A[i+1] = A[i+1],A[hi]
-        return i+1
+    return i+1
 
 if __name__ == '__main__':
     
