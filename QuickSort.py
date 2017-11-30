@@ -2,10 +2,6 @@
 #11-29-17
 #quick sort -- pick a piviot point then move all smaller values to left and all larger values to right then repeat with one of the two subsets
 
-#Max Low
-#11-27-17
-#cocktailSort.py -- implementaio of cocktail Sort
-
 #Sam Smedinghoff
 #11/15/17
 #sorting.py - code to test a sorting function
@@ -32,41 +28,22 @@ algorithm partition(A, lo, hi) is
         swap A[i + 1] with A[hi]
     return i + 1
 """
-def mySort(A):
-    def quicksort(A, lo, hi):
-        if lo < hi:
-            p = partition(A, lo, hi)
-            quicksort(A, lo, p - 1)
-            quicksort(A, p+1, hi)
+def mySort(A, lo, hi):
+    if lo < hi:
+        p = partition(A, lo, hi)
+        quicksort(A, lo, p - 1)
+        quicksort(A, p+1, hi)
 
-    def partition(A, lo, hi):
-        pivot = A[hi]
-        i = lo - 1
-        for j in range(lo,hi):
-            if A[j] < pivot:
-                i = i+=1
-                A[i], A[j] = A[j],A[i]
-            if A[hi] < A[i+1]:
-                A[i+1], A[hi] = A[hi],A[i+1]
-            return i+1
-        
-"""
-    swapped = True
-    while swapped:
-        swapped = False
-        for i in range(0,len(A)-1):
-            if A[i] > A[i+1]:
-                A[i], A[i+1] = A[i+1],A[i] # swap in Python
-            swapped = True
-        if not swapped:
-            break
-        swapped = False
-        for i in range(len(A)-2,-1,-1):
-            if A[i] > A[i+1]:
-                A[i], A[i+1] = A[i+1],A[i] # swap in Python
-                swapped = True
-    return A
-"""
+def partition(A, lo, hi):
+    pivot = A[hi]
+    i = lo - 1
+    for j in range(lo,hi):
+        if A[j] < pivot:
+            i = i+=1
+            A[i], A[j] = A[j],A[i]
+        if A[hi] < A[i+1]:
+            A[i+1], A[hi] = A[hi],A[i+1]
+        return i+1
 
 if __name__ == '__main__':
     
@@ -89,4 +66,6 @@ if __name__ == '__main__':
     except:
         print('Your sort did not work')
         
+
+
 
