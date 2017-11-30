@@ -43,8 +43,8 @@ def partition(A, lo, hi):
         if A[j] < pivot:
             i += 1
             A[i], A[j] = A[j],A[i]
-        if A[hi] < A[i+1]:
-            A[i+1], A[hi] = A[hi],A[i+1]
+    if A[hi] < A[i+1]:
+        A[hi], A[i+1] = A[i+1],A[hi]
         return i+1
 
 if __name__ == '__main__':
