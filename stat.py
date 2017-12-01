@@ -15,7 +15,7 @@ print("Min:",numbers[0])
 
 mean = 0
 for i in numbers:
-    i = str(i)
+    i = int(i)
     mean += i
 mean/len(numbers)
 
