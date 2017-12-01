@@ -20,3 +20,7 @@ for i in numbers:
 mean = mean/len(numbers)
 
 print("Mean:",mean)
+
+total = 0 
+for j in numbers:
+   
