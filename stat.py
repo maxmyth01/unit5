@@ -7,5 +7,9 @@ numbers = []
 while True:
     num = input("Type a list of numbers, enter q to stop")
     if num == "q":
-        
-    numbers.append(input(""))
+        break 
+    numbers.append(num)
+numbers.sort()
+print("Max:",numbers[len(numbers)-1])
+print("Min:",numbers[0])
+print("Mean:"sum(numbers)/len(numbers))
