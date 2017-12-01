@@ -6,13 +6,16 @@ from datetime import date
 from calendar import weekday
 
 today = date.today()
-
-day = today.weekday()
-month = int(today.month)
-year = int(today.year)
+day = today.day
+month = today.month
+year = today.year
+week = today.weekday()
 
 
 dayOfWeek = ["Monday","Tuesday","Wenesday","Thursday","Friday","Saterday","Sunday"]
 monthOfYear = ["January","Febuary","March","April","May","June","July","Auguest","September","October","November","December"]
 
-print("Today is",dayOfWeek[today],monthOfYear[month],day,year)
+weeks = dayOfWeek[week]
+months = monthOfYear[month]
+
+print("Today is",weeks,months,day,year)
