@@ -12,4 +12,10 @@ while True:
 numbers.sort()
 print("Max:",numbers[len(numbers)-1])
 print("Min:",numbers[0])
-print("Mean:",sum(numbers)/len(numbers))
+
+mean = 0
+for i in numbers:
+    mean += i
+mean/len(numbers)
+
+print("Mean:",mean)
