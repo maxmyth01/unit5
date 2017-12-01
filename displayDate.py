@@ -16,6 +16,6 @@ dayOfWeek = ["Monday","Tuesday","Wenesday","Thursday","Friday","Saterday","Sunda
 monthOfYear = ["January","Febuary","March","April","May","June","July","Auguest","September","October","November","December"]
 
 weeks = dayOfWeek[week]
-months = monthOfYear[month]
+months = monthOfYear[month-1]
 
 print("Today is",weeks,months,day,year)
