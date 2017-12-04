@@ -21,13 +21,12 @@ def wordLengths(sentance):
         new.append(len(word))
     return new
     
-
+def biggest(z):
+    z.sort()
+    return z[len(z)-1]
 
 print(rand5())
 print(lastElement(['cat','dog','rat']))
-
-print(wordLengths(['the','cat,'is','hungry']))
-
-"""
+print(wordLengths(['the','cat','is','hungry']))
 print(biggest([3,-1,5,-2,7,2,1]))
-"""
+
