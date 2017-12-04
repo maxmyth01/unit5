@@ -4,11 +4,11 @@
 
 from random import randint
 
-def rand5:
+def rand5():
     x=0
     rand = []
     while x < 5:
-        rand.append randint(1,100)
+        rand.append(randint(1,100))
         x+=1
     return rand
 
