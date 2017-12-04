@@ -12,11 +12,14 @@ def rand5():
         x+=1
     return rand
 
+def lastElement(X):
+    return lastElement[len(lastElement)-1]
+    
 
 
 print(rand5())
-"""
 print(lastElement(['cat','dog','rat']))
+"""
 print(wordLengths(['the','cat,'is','hungry']))
 print(biggest([3,-1,5,-2,7,2,1]))
 """
